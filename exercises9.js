@@ -1,8 +1,8 @@
 console.log("1. Solve Problems array cariMean(arr)");
 
 function cariMean(arr) {
-  temp=0;
-  for(i=0; i<arr.length; i++){
+  var temp=0;
+  for(var i=0; i<arr.length; i++){
     temp+=arr[i];
   }
   var mean=temp/arr.length
