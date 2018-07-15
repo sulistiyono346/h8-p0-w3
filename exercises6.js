@@ -19,6 +19,27 @@ console.log(angkaPalindrome(117)); // 121>10
 console.log(angkaPalindrome(175)); // 181>10
 console.log(angkaPalindrome(1000)); // 1001>10
 
+function angkaPalindrome(num) {
+  for (var i = num+1; i >=0; i++) {
+    var numStr=String(i);
+    if (i<10) {
+      return i;
+    }
+    else if (numStr === numStr.split("").reverse().join("")) {
+      return i
+    }
+  }
+}
+
+// TEST CASES
+console.log(angkaPalindrome(8)); // 9 < 10
+console.log(angkaPalindrome(10)); // 11 >10
+console.log(angkaPalindrome(117)); // 121>10
+console.log(angkaPalindrome(175)); // 181>10
+console.log(angkaPalindrome(1000)); // 1001>10
+
+
+
 
 
 
